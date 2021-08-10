@@ -1,0 +1,66 @@
+/* buka fonts.google,
+cari sesuai selera pada web 
+klik select
+klik import, lalu salin linknya, pindahkan ke css file */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    /* margin digunakan antar jarak content atau item 
+    padding digunakan jarak antar item di dalamnya */
+    margin: 0;
+}
+.header{
+    width: 100%;
+    /* overflow hidden digunakan untuk otomatis merangkap utk mengatur ketinggian */
+    overflow: hidden;
+    /* linear-gradient ini berfungsi sebagai pencampuran warna */
+    background: linear-gradient(green,blue);
+    /* margin-bottom: digunakan utk jarak item di bawahnya */
+    margin-bottom: 50px;
+
+}
+.container{
+    width: 60%;
+    overflow: hidden;
+    margin: auto;
+}
+.container .logo{
+    font-size: 35px;
+    /* float digunakan utk arah item */
+    float: left;
+    font-family: lobster;
+}
+.container .navigation{
+    float: right;
+    margin-top: 40px;
+}
+.container .navigation li{
+    float: right;
+    margin-left: 20px;
+    font-size: 16px;
+    /* display block ini berfungsi utk menghilangkan titik */
+    display: block;
+}
+.container .navigation li a{
+    color: black;
+    /* text decoration : none berfungsi sebagai menghilangkan underline */
+    text-decoration: none;
+}
+.container .navigation li a:hover{
+    /* pseudo-classes */
+    /* hover ini adalah saat kita klik atau cursor akan berubah warna */
+    color:red;
+    text-decoration: underline;
+}
+.icon-class{
+    width: 250px;
+    height: 250px;
+    /* background-image ini digunakan supaya mudah menampilakan image serta kita bisa modifikasinya; */
+    background-image: url('image/citra_1.jpg');
+    /* cover ini membidik bagian utama pada gambar di dalam size yang kita buat */
+    background-size: cover;
+    border-radius: 50%;
+}
+.parent{
+    margin-top: 100px;
+}
