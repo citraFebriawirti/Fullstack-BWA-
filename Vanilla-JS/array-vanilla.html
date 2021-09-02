@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array-vanilla</title>
+</head>
+<body>
+    <script>
+    // array.push(value)-> menambah data ke array
+	// array.lenght -> untuk mendapatkan panjang array
+	// array[index] -> mendapatkan data di posisi index
+	// array[index]= value -> mengubah data di posisi index
+	// delete array[index]-> mengahpus data di posisi index, namun index tidak bergeser
+    
+const masdep =["Supra","Yamaha","Jupiter"];
+masdep.forEach(function(item,index,array){
+console.log(item,index);
+});
+
+console.table(masdep);
+
+masdep.push("Milton");
+console.table(masdep);
+console.log(masdep.length);
+
+delete masdep[0];
+console.table(masdep);
+
+</script>
+</body>
+</html>

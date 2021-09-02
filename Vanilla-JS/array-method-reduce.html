@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array-method-reduce</title>
+</head>
+<body>
+  <script>
+    // array-method-reduce digunakan untuk menampilkan elemen ke-
+    const masdep = ["Bintang","Agung","Raziq"];
+      console.log(
+        masdep.reduce(function(acc,dep,ke){
+          acc[dep] = `Masdep ke ${ke+1}`;
+          return acc;
+      },{})
+  );
+</script> 
+</body>
+</html>
